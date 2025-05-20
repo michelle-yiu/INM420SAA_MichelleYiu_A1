@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <header class="bg-white py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">Grid</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500 transition-colors">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero bg-gradient-to-br from-purple-100 to-pink-100 text-gray-800 py-16 md:py-24 px-4">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Combine <span
+                        class="text-blue-600">Cool</span> Images</h1>
+                <p class="text-lg sm:text-xl mb-8">To create any grid by scaling and resizing</p>
+                <a href="#"
+                    class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300">No
+                    problem! Let's start</a>
+            </div>
+        </section>
+
+        <section class="features bg-gray-50 py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-8">Delivering good designs since 1954
+                </h2>
+                <p class="text-gray-600 text-center mb-12">We're the first multi-purpose design kit solutions for
+                    businesses. We help you bridge gaps between your layouts, templates and developers to empower all
+                    involved.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-item text-center">
+                        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/zap.svg" alt="Support"
+                            class="mx-auto h-12 w-12 text-purple-500 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Support</h3>
+                        <p class="text-gray-600">Learn more</p>
+                    </div>
+                    <div class="feature-item text-center">
+                        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/trending-up.svg"
+                            alt="Sales Growth" class="mx-auto h-12 w-12 text-green-500 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Sales Growth</h3>
+                        <p class="text-gray-600">Learn more</p>
+                    </div>
+                    <div class="feature-item text-center">
+                        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/layers.svg"
+                            alt="Components-driven" class="mx-auto h-12 w-12 text-blue-500 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Components-driven</h3>
+                        <p class="text-gray-600">Learn more</p>
+                    </div>
+                    <div class="feature-item text-center">
+                        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/refresh-cw.svg"
+                            alt="Swap the icon" class="mx-auto h-12 w-12 text-pink-500 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Swap the icon</h3>
+                        <p class="text-gray-600">Learn more</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing bg-purple-50 py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-8">Affordable pricing</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="pricing-card bg-white rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Free</h3>
+                        <p class="text-4xl font-bold text-gray-800 mb-4">$0<span class="text-lg">/month</span></p>
+                        <ul class="list-disc list-inside text-gray-600 mb-6">
+                            <li>1 User</li>
+                            <li>Basic Features</li>
+                            <li>Limited Support</li>
+                        </ul>
+                        <button
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 w-full">Try
+                            for free</button>
+                    </div>
+
+                    <div class="pricing-card bg-white rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Regular License</h3>
+                        <p class="text-4xl font-bold text-gray-800 mb-4">$24<span class="text-lg">/month</span></p>
+                        <ul class="list-disc list-inside text-gray-600 mb-6">
+                            <li>5 Users</li>
+                            <li>Advanced Features</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <button
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 w-full">Regular
+                            license</button>
+                    </div>
+
+                    <div class="pricing-card bg-white rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Extended License</h3>
+                        <p class="text-4xl font-bold text-gray-800 mb-4">$12<span class="text-lg">/month</span></p>
+                        <ul class="list-disc list-inside text-gray-600 mb-6">
+                            <li>Unlimited Users</li>
+                            <li>All Features</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <button
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 w-full">Extended
+                            license</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact bg-gray-50 py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-8">Contact Us</h2>
+                <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+                    <p class="text-gray-600">Drop us a line at <a href="mailto:hello@fapsterapp.com"
+                            class="text-blue-500 hover:underline">hello@fapsterapp.com</a></p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                            </svg></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-instagram">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-6 px-4">
+        <div class="container mx-auto text-center text-gray-600">
+            <p>&copy; 2023 Grid. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
