@@ -1,168 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INM420 - Assignment 1</title>
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INM420 - Assignment 1</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="navbar">
-    <div class="navbar-container">
-      <!-- Left: Logo and toggle -->
-      <div class="navbar-left">
-        <button class="menu-toggle" id="menuToggle">
-          &#9776;
-        </button>
-        <a href="#" class="brand">
-          <span class="brand-text">Grid</span>
-        </a>
-      </div>
+<!-- HEADER -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Left: logo, brand and burger -->
+            <div class="navbar-left">
+                <button class="menu-burger">
+                    <img id="burgerMenu" src="assets/icons/icon-burgermenu.png" alt="Burger Menu">
+                </button>
+                <a href="#" class="brand">
+                    <img id="logo" src="assets/icons/icon-logo.png" alt="Logo">
+                    <span class="brand-text">Grid</span>
+                </a>
+            </div>
 
-      <!-- Center: Navigation links -->
-      <nav class="navbar-links" id="navbarLinks">
-        <a href="#">How it works</a>
-        <a href="#">Who we are</a>
-        <a href="#">What we do</a>
-        <a href="#">Contact us</a>
-      </nav>
+            <!-- Center: navigation links -->
+            <nav class="navbar-links" id="navbarLinks">
+                <a href="#">How it works</a>
+                <a href="#">Who we are</a>
+                <a href="#">What we do</a>
+                <a href="#">Contact us</a>
+            </nav>
 
-      <!-- Right: Sign In button -->
-      <div class="navbar-right">
-        <a href="#" class="btn-signin">Sign In</a>
-      </div>
-    </div>
-  </header>
+            <!-- Right: sign in button -->
+            <div class="navbar-right">
+                <a href="#" class="btn-signin">Sign In</a>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+     <img id="mobileHero" src="assets/images/mobile_banner.png" alt="">
+     <img id="desktopHero" src="assets/images/desktop_banner.png" alt="">
+    
 
-  <!-- Hero Section -->
-  <section class="text-center px-3 py-4 hero">
-    <h1><strong>Combine <span class="highlight">Cool</span> images</strong></h1>
-    <p class="lead">To create any grid by scaling and resizing</p>
-    <!-- dummy arrow graphic -->
-    <div class="my-3">
-      <img src="arrow-down.svg" alt="Arrow" width="24" height="24" />
-    </div>
-  </section>
+    <!-- Features Section -->
+    <section class="container py-4">
+        <h5><strong>Delivering good designs <br> <span class="text-primary">since 1954</span></strong></h5>
+        <p>We’re the first multi-purpose design kit solutions for businesses...</p>
+        <div class="row text-center mt-4">
+            <div class="col-6 mb-3">
+                <img src="assets/icons/icon-thumbs-up.png" alt="Icon" width="32" class="FeatureIcon" />
+                <h6>Swap the icon</h6>
+                <p class="small">You can toggle to any icon...</p>
+                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            </div>
+            <div class="col-6 mb-3">
+                <img src="assets/icons/icon-zap-off.png" alt="Icon" width="32" class="FeatureIcon" />
+                <h6>Detach if need</h6>
+                <p class="small">Detaching the block instance...</p>
+                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            </div>
+            <div class="col-6">
+                <img src="assets/icons/icon-linkedin.png" alt="Icon" width="32" class="FeatureIcon" />
+                <h6>Toggle icons</h6>
+                <p class="small">You can toggle to any icon within instances...</p>
+                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            </div>
+            <div class="col-6">
+                <img src="assets/icons/icon-briefcase.png" alt="Icon" width="32" class="FeatureIcon" />
+                <h6>Replace a title</h6>
+                <p class="small">Detaching the block instance will help...</p>
+                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- Image Grid Section -->
-  <section class="container my-3">
-    <div class="row g-2">
-      <!-- Replace with real images later -->
-      <div class="col-6">
-        <img src="assets/images/lipstick.jpg" class="img-fluid" alt="Image 1" />
-      </div>
-      <div class="col-6">
-        <img src="assets/images/speaker.png" class="img-fluid" alt="Image 2" />
-      </div>
-      <div class="col-4">
-        <img src="assets/images/flower.jpg" class="img-fluid" alt="Image 3" />
-      </div>
-      <div class="col-4">
-        <img src="assets/images/plant.jpg" class="img-fluid" alt="Image 4" />
-      </div>
-      <div class="col-4">
-        <img src="assets/images/color.jpg" class="img-fluid" alt="Image 5" />
-      </div>
-    </div>
-  </section>
+    <!-- Pricing Section -->
+    <section class="container py-4">
+        <h5><strong>Pricing</strong></h5>
+        <p>Bill me monthly • <span class="text-warning">yearly</span></p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h6>Individual</h6>
+                <p><strong>$8.99</strong> / month</p>
+                <ul class="list-unstyled small">
+                    <li>✔️ Unlimited hosting</li>
+                    <li>✔️ Free storage</li>
+                    <li>✔️ Lifetime support</li>
+                    <li>✔️ Constant updates</li>
+                </ul>
+                <button class="btn btn-primary w-100">Get started!</button>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h6>Professional</h6>
+                <p><strong>$12.99</strong> / month</p>
+                <ul class="list-unstyled small">
+                    <li>✔️ Unlimited hosting</li>
+                    <li>✔️ Free storage</li>
+                    <li>✔️ Lifetime support</li>
+                    <li>✔️ Constant updates</li>
+                </ul>
+                <button class="btn btn-primary w-100">Select this plan!</button>
+            </div>
+        </div>
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h6>Enterprise</h6>
+                <p><strong>$32.99</strong> / month</p>
+                <ul class="list-unstyled small">
+                    <li>✔️ Unlimited hosting</li>
+                    <li>✔️ Free storage</li>
+                    <li>✔️ Lifetime support</li>
+                    <li>✔️ Constant updates</li>
+                </ul>
+                <button class="btn btn-light w-100">Start today!</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- Features Section -->
-  <section class="container py-4">
-    <h5><strong>Delivering good designs <br> <span class="text-primary">since 1954</span></strong></h5>
-    <p>We’re the first multi-purpose design kit solutions for businesses...</p>
-    <div class="row text-center mt-4">
-      <div class="col-6 mb-3">
-        <img src="assets/icons/icon-thumbs-up.png" alt="Icon" width="32" class="FeatureIcon"/>
-        <h6>Swap the icon</h6>
-        <p class="small">You can toggle to any icon...</p>
-        <button class="btn btn-outline-primary btn-sm">Learn more</button>
-      </div>
-      <div class="col-6 mb-3"> 
-        <img src="assets/icons/icon-zap-off.png" alt="Icon" width="32" class="FeatureIcon"/>
-        <h6>Detach if need</h6>
-        <p class="small">Detaching the block instance...</p>
-        <button class="btn btn-outline-primary btn-sm">Learn more</button>
-      </div>
-      <div class="col-6">
-        <img src="assets/icons/icon-linkedin.png" alt="Icon" width="32" class="FeatureIcon"/>
-        <h6>Toggle icons</h6>
-        <p class="small">You can toggle to any icon within instances...</p>
-        <button class="btn btn-outline-primary btn-sm">Learn more</button>
-      </div>
-      <div class="col-6">
-        <img src="assets/icons/icon-briefcase.png" alt="Icon" width="32" class="FeatureIcon"/>
-        <h6>Replace a title</h6>
-        <p class="small">Detaching the block instance will help...</p>
-        <button class="btn btn-outline-primary btn-sm">Learn more</button>
-      </div>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="text-center small py-4">
+        <p>Copyright © 2018 • Your Company<br />All rights reserved</p>
+        <p>hello@setproduct.com</p>
+        <div class="d-flex justify-content-center gap-3">
+            <!-- Dummy social icons -->
+            <img src="assets/icons/icon-facebook.png" alt="Facebook" width="20">
+            <img src="assets/icons/icon-linkedin copy.png" alt="LinkedIn" width="20">
+            <img src="assets/icons/icon-slack.png" alt="Slack" width="20">
+            <img src="assets/icons/icon-twitter.png" alt="Slack" width="20">
+            <img src="assets/icons/icon-youtube.png" alt="Slack" width="20">
+        </div>
+    </footer>
 
-  <!-- Pricing Section -->
-  <section class="container py-4">
-    <h5><strong>Pricing</strong></h5>
-    <p>Bill me monthly • <span class="text-warning">yearly</span></p>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h6>Individual</h6>
-        <p><strong>$8.99</strong> / month</p>
-        <ul class="list-unstyled small">
-          <li>✔️ Unlimited hosting</li>
-          <li>✔️ Free storage</li>
-          <li>✔️ Lifetime support</li>
-          <li>✔️ Constant updates</li>
-        </ul>
-        <button class="btn btn-primary w-100">Get started!</button>
-      </div>
-    </div>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h6>Professional</h6>
-        <p><strong>$12.99</strong> / month</p>
-        <ul class="list-unstyled small">
-          <li>✔️ Unlimited hosting</li>
-          <li>✔️ Free storage</li>
-          <li>✔️ Lifetime support</li>
-          <li>✔️ Constant updates</li>
-        </ul>
-        <button class="btn btn-primary w-100">Select this plan!</button>
-      </div>
-    </div>
-    <div class="card bg-primary text-white">
-      <div class="card-body">
-        <h6>Enterprise</h6>
-        <p><strong>$32.99</strong> / month</p>
-        <ul class="list-unstyled small">
-          <li>✔️ Unlimited hosting</li>
-          <li>✔️ Free storage</li>
-          <li>✔️ Lifetime support</li>
-          <li>✔️ Constant updates</li>
-        </ul>
-        <button class="btn btn-light w-100">Start today!</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center small py-4">
-    <p>Copyright © 2018 • Your Company<br/>All rights reserved</p>
-    <p>hello@setproduct.com</p>
-    <div class="d-flex justify-content-center gap-3">
-      <!-- Dummy social icons -->
-      <img src="assets/icons/icon-facebook.png" alt="Facebook" width="20">
-      <img src="assets/icons/icon-linkedin copy.png" alt="LinkedIn" width="20">
-      <img src="assets/icons/icon-slack.png" alt="Slack" width="20">
-      <img src="assets/icons/icon-twitter.png" alt="Slack" width="20">
-      <img src="assets/icons/icon-youtube.png" alt="Slack" width="20">
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
