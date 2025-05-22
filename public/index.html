@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<!-- HEADER -->
+    <!-- HEADER -->
     <header class="navbar">
         <div class="navbar-container">
             <!-- Left: logo, brand and burger -->
@@ -24,7 +24,6 @@
                     <span class="brand-text">Grid</span>
                 </a>
             </div>
-
             <!-- Center: navigation links -->
             <nav class="navbar-links" id="navbarLinks">
                 <a href="#">How it works</a>
@@ -32,7 +31,6 @@
                 <a href="#">What we do</a>
                 <a href="#">Contact us</a>
             </nav>
-
             <!-- Right: sign in button -->
             <div class="navbar-right">
                 <a href="#" class="btn-signin">Sign In</a>
@@ -40,101 +38,145 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-     <img id="mobileHero" src="assets/images/mobile_banner.png" alt="">
-     <img id="desktopHero" src="assets/images/desktop_banner.png" alt="">
-    
 
-    <!-- Features Section -->
-    <section class="container py-4">
-        <h5><strong>Delivering good designs <br> <span class="text-primary">since 1954</span></strong></h5>
-        <p>We’re the first multi-purpose design kit solutions for businesses...</p>
-        <div class="row text-center mt-4">
-            <div class="col-6 mb-3">
-                <img src="assets/icons/icon-thumbs-up.png" alt="Icon" width="32" class="FeatureIcon" />
-                <h6>Swap the icon</h6>
-                <p class="small">You can toggle to any icon...</p>
-                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+    <!-- HERO SECTION (Dummy only) -->
+    <img id="mobileHero" src="assets/images/mobile_banner.png" alt="">
+    <img id="desktopHero" src="assets/images/desktop_banner.png" alt="">
+
+
+    <!-- FEATURE SECTION -->
+    <section class="features">
+        <h2>Delivering good designs <span class="purpleText">since 1954</span></h2>
+        <p>We’re the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your
+            layouts, templates and developers to empower all involved.</p>
+        <div class="feature-card">
+            <div class="feature-box">
+                <img class="FeatureIcon" id="thumbsUp" src="assets/icons/icon-thumbs-up.png" alt="Thumbs Up Icon" />
+                <h3>Swap the icon</h3>
+                <p>You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
+                </p>
+                <button class="learn-more-btn">Learn more</button>
             </div>
-            <div class="col-6 mb-3">
-                <img src="assets/icons/icon-zap-off.png" alt="Icon" width="32" class="FeatureIcon" />
-                <h6>Detach if need</h6>
-                <p class="small">Detaching the block instance...</p>
-                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            <div class="feature-box">
+                <img class="FeatureIcon" id="zapOff" src="assets/icons/icon-zap-off.png" alt="Zap Off Icon" />
+                <h3>Detach if need</h3>
+                <p>Detaching the block instance will help you to control the indents and font styles more precisely</p>
+                <button class="learn-more-btn">Learn more</button>
             </div>
-            <div class="col-6">
-                <img src="assets/icons/icon-linkedin.png" alt="Icon" width="32" class="FeatureIcon" />
-                <h6>Toggle icons</h6>
-                <p class="small">You can toggle to any icon within instances...</p>
-                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            <div class="feature-box">
+                <img class="FeatureIcon" id="linkedIn" src="assets/icons/icon-linkedin.png" alt="linkedIn Icon" />
+                <h3>Toggle icons</h3>
+                <p>You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
+                </p>
+                <button class="learn-more-btn">Learn more</button>
             </div>
-            <div class="col-6">
-                <img src="assets/icons/icon-briefcase.png" alt="Icon" width="32" class="FeatureIcon" />
-                <h6>Replace a title</h6>
-                <p class="small">Detaching the block instance will help...</p>
-                <button class="btn btn-outline-primary btn-sm">Learn more</button>
+            <div class="feature-box">
+                <img class="FeatureIcon" id="briefcase" src="assets/icons/icon-briefcase.png" alt="briefcase Icon" />
+                <h3>Replace a title</h3>
+                <p>Detaching the block instance will help you to control the indents and font styles more precisely</p>
+                <button class="learn-more-btn">Learn more</button>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="container py-4">
-        <h5><strong>Pricing</strong></h5>
-        <p>Bill me monthly • <span class="text-warning">yearly</span></p>
-        <div class="card mb-3">
-            <div class="card-body">
-                <h6>Individual</h6>
-                <p><strong>$8.99</strong> / month</p>
-                <ul class="list-unstyled small">
-                    <li>✔️ Unlimited hosting</li>
-                    <li>✔️ Free storage</li>
-                    <li>✔️ Lifetime support</li>
-                    <li>✔️ Constant updates</li>
-                </ul>
-                <button class="btn btn-primary w-100">Get started!</button>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing">
+        <h2>Pricing</h2>
+        <p>Bill me <span class="billOption">monthly</span> • <span class="billOption">yearly</span></p>
+        <div class="row gx-3 gy-3">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body plan">
+                        <h3>Individual</h3>
+                        <p class="plan-price">$8.99 /month</p>
+                        <ul class="list-unstyled small">
+                            <li>✔️ Unlimited hosting</li>
+                            <li>✔️ Free storage</li>
+                            <li>✔️ Lifetime support</li>
+                            <li>✔️ Constant updates</li>
+                        </ul>
+                        <button class="btn btn-light w-100">Get started!</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-body">
-                <h6>Professional</h6>
-                <p><strong>$12.99</strong> / month</p>
-                <ul class="list-unstyled small">
-                    <li>✔️ Unlimited hosting</li>
-                    <li>✔️ Free storage</li>
-                    <li>✔️ Lifetime support</li>
-                    <li>✔️ Constant updates</li>
-                </ul>
-                <button class="btn btn-primary w-100">Select this plan!</button>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body plan">
+                        <h3>Professional</h3>
+                        <p class="plan-price">$12.99 /month</p>
+                        <ul class="list-unstyled small">
+                            <li>✔️ Unlimited hosting</li>
+                            <li>✔️ Free storage</li>
+                            <li>✔️ Lifetime support</li>
+                            <li>✔️ Constant updates</li>
+                        </ul>
+                        <button class="btn btn-light w-100">Select this plan!</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card bg-primary text-white">
-            <div class="card-body">
-                <h6>Enterprise</h6>
-                <p><strong>$32.99</strong> / month</p>
-                <ul class="list-unstyled small">
-                    <li>✔️ Unlimited hosting</li>
-                    <li>✔️ Free storage</li>
-                    <li>✔️ Lifetime support</li>
-                    <li>✔️ Constant updates</li>
-                </ul>
-                <button class="btn btn-light w-100">Start today!</button>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body plan">
+                        <h3>Enterprise</h3>
+                        <p class="plan-price"> $32.99 /month</p>
+                        <ul class="list-unstyled small">
+                            <li>✔️ Unlimited hosting</li>
+                            <li>✔️ Free storage</li>
+                            <li>✔️ Lifetime support</li>
+                            <li>✔️ Constant updates</li>
+                        </ul>
+                        <button class="btn btn-light w-100">Start today!</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center small py-4">
-        <p>Copyright © 2018 • Your Company<br />All rights reserved</p>
-        <p>hello@setproduct.com</p>
-        <div class="d-flex justify-content-center gap-3">
-            <!-- Dummy social icons -->
-            <img src="assets/icons/icon-facebook.png" alt="Facebook" width="20">
-            <img src="assets/icons/icon-linkedin copy.png" alt="LinkedIn" width="20">
-            <img src="assets/icons/icon-slack.png" alt="Slack" width="20">
-            <img src="assets/icons/icon-twitter.png" alt="Slack" width="20">
-            <img src="assets/icons/icon-youtube.png" alt="Slack" width="20">
+
+    <!-- FOOTER -->
+    <footer class="footer text-center small py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Main footer content -->
+                <div class="col-12 col-md-8">
+                    <p>Copyright © 2018 • Your Company<br />All rights reserved</p>
+                    <p class="lightBlue">Made in Setproduct.com <br />One man digital agency</p>
+                    <a href="#">hello@setproduct.com</a>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-5 social">
+                        <a href="#"><img src="assets/icons/icon-facebook.png" alt="Facebook Icon"></a>
+                        <a href="#"><img src="assets/icons/icon-linkedin copy.png" alt="LinkedIn Icon"></a>
+                        <a href="#"><img src="assets/icons/icon-slack.png" alt="Slack Icon"></a>
+                        <a href="#"><img src="assets/icons/icon-twitter.png" alt="Twitter Icon"></a>
+                        <a href="#"><img src="assets/icons/icon-youtube.png" alt="YouTube Icon"></a>
+                    </div>
+                </div>
+                <!-- CONTACT FORM - RIGHT -->
+                <div class="col-12 col-md-4 contactForm">
+                    <h6 class="fw-bold mb-3">Keep In Touch</h6>
+                    <form>
+                        <div class="row g-2 mb-2">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Your name">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <textarea class="form-control" rows="2" placeholder="Leave your message!"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold">Send</button>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </footer>
+
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

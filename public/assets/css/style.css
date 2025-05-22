@@ -5,6 +5,18 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+
 /* === HEADER === */
 .navbar {
     background-color: white;
@@ -33,7 +45,7 @@ body {
 }
 
 #burgerMenu {
-    width: 40px;
+    width: 60px;
 }
 
 .brand {
@@ -50,7 +62,7 @@ body {
 .brand-text {
     font-weight: 700;
     color: #5c5c5c;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 /* Center: nav links */
@@ -65,12 +77,13 @@ body {
     padding: 6px 30px;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* === HERO BANNER === */
+
+/* === HERO SECTION (DUMMY) === */
 #mobileHero {
     width: 100%;
 }
@@ -80,8 +93,170 @@ body {
 }
 
 
+/* === FEATURE SECTION === */
+.features {
+    padding: 20px 30px;
+}
 
-/* === FOR DESKTOP (SCREEN SIZE >768px) === */
+.purpleText {
+    color: #6c5ce7;
+}
+
+.feature-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.feature-box {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-box img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #5c5c5c;
+}
+
+.learn-more-btn {
+    color: #6c5ce7;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #adadad;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 150px;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.FeatureIcon {
+    border-radius: 10px;
+}
+
+#thumbsUp {
+    background-color: #ff7675;
+}
+
+#zapOff {
+    background-color: #00b894;
+}
+
+#linkedIn {
+    background-color: #e84393;
+}
+
+#briefcase {
+    background-color: #74b9ff;
+}
+
+
+/* === PRICING SECTION (TBC) === */
+.pricing {
+    padding: 20px 30px;
+}
+
+.pricing>p {
+    color: #5c5c5c;
+}
+
+.billOption:hover {
+    text-decoration: underline 8px solid #fdcb6e;
+    color: black;
+}
+
+.plan {
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.plan h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.plan-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.plan ul {
+    padding-left: 16px;
+    margin: 0;
+}
+
+.plan li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.plan button {
+    margin-top: 12px;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.card:hover {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+/* === FOOTER === */
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.lightBlue {
+    color: #00b894;
+}
+
+footer a {
+    color: #6c5ce7;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* Social icons */
+footer img {
+    width: 40px;
+    margin-top: 20px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+footer img:hover {
+    filter: none;
+    transform: scale(1.3);
+}
+
+/* Contact form default hidden on mobile */
+.contactForm {
+    display: none;
+}
+
+
+
+/* === RESPONSIVE FOR DESKTOP (SCREEN SIZE >768px) === */
 @media screen and (min-width: 768px) {
 
     /* === HEADER === */
@@ -95,7 +270,7 @@ body {
 
     #logo {
         display: block;
-        width: 40px;
+        width: 60px;
     }
 
     .navbar-links {
@@ -111,8 +286,8 @@ body {
         text-decoration: none;
         color: #6c5ce7;
         font-weight: 400;
-        font-size: 14px;
-        transition: 0.2s ease;
+        font-size: 16px;
+        transition: all 0.3s ease;
     }
 
     /* Hover effect for navigation */
@@ -132,7 +307,7 @@ body {
         content: '';
     }
 
-    /* === HERO BANNER === */
+    /* === HERO SECTION (DUMMY) === */
     #mobileHero {
         display: none;
     }
@@ -143,182 +318,55 @@ body {
     }
 
 
-}
-
-
-
-
-/* ========== Features Section ========== */
-.features {
-    padding: 24px 16px;
-}
-
-.features h2 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.features p {
-    font-size: 14px;
-    margin-bottom: 16px;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.feature-box {
-    text-align: left;
-}
-
-.feature-box img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 8px;
-}
-
-.feature-box h3 {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.feature-box p {
-    font-size: 12px;
-    color: #444;
-}
-
-.learn-more-btn {
-    margin-top: 8px;
-    background-color: #f4f4f4;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 12px;
-}
-
-.FeatureIcon {
-    background-color: red;
-}
-
-/* ========== Pricing Section ========== */
-.pricing {
-    padding: 24px 16px;
-    background-color: #f9f9f9;
-}
-
-.pricing h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.billing-toggle {
-    font-size: 14px;
-    margin-bottom: 16px;
-}
-
-.plan {
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 16px;
-    background-color: white;
-}
-
-.plan h3 {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.plan-price {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 8px 0;
-}
-
-.plan ul {
-    padding-left: 16px;
-    margin: 0;
-}
-
-.plan li {
-    font-size: 12px;
-    margin-bottom: 6px;
-}
-
-.plan button {
-    margin-top: 12px;
-    background-color: #6a4fff;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-/* ========== Footer ========== */
-.footer {
-    padding: 24px 16px;
-    font-size: 12px;
-    color: #777;
-    text-align: center;
-}
-
-.footer a {
-    color: #6a4fff;
-    font-weight: bold;
-}
-
-/* ========== Desktop Styles (≥600px) ========== */
-@media (min-width: 600px) {
-    .header {
-        padding: 24px 40px;
-    }
-
-    .hero {
-        padding: 60px 40px;
-        text-align: left;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
-        padding: 40px;
-    }
-
-    .features {
-        padding: 40px;
-    }
-
-    .feature-grid {
+    /* === FEATURE SECTION === */
+    .feature-card {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .pricing {
-        padding: 40px;
+    .FeatureIcon {
+        border-radius: 99px;
     }
 
-    .plan-wrapper {
+
+    /* === FOOTER === */
+    footer .container {
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         gap: 20px;
+    }
+
+    .footer .row {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
-    .plan {
+    .footer .col-md-8,
+    .footer .col-md-4 {
         flex: 1;
     }
 
-    .footer {
-        padding: 40px;
-        font-size: 14px;
+    .footer .col-md-8 {
+        text-align: left;
+    }
+
+    .contactForm {
+        display: block;
+        text-align: left;
+        max-width: 100%;
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+    }
+
+    .footer p,
+    .footer h6 {
+        margin-bottom: 5px;
+    }
+
+    .footer button {
+        background-color: #6c5ce7;
+        border: none;
     }
 }
